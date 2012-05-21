@@ -1,0 +1,78 @@
+<!--
+Hello, source viewer! Feel free to dissect this code. If you have any questions
+or comments, e-mail me at jf.arseneau at-sign gmail dot com.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>
+			RPG Text Box Generator
+		</title>
+
+		<!-- Styleland -->
+			<link rel="stylesheet" type="text/css" href="styles/reset.css">
+			<link rel="stylesheet/less" type="text/css" href="styles/style.less">
+		<!-- /Styleland -->
+
+		<!-- Scriptland -->
+			<!-- [if IE]>
+				<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+			<![endif-->
+
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+			<script src="scripts/less-1.3.0.min.js" type="text/javascript"></script>
+			<script src="scripts/rpg-textbox-gen-0.1.js" type="text/javascript"></script>
+		<!-- /Scriptland -->
+
+	</head>
+
+	<body>
+		<h1>RPG Text Box Generator</h1>
+		<canvas id="textbox" width="1135" height="340"></canvas>
+
+		<div id="content">
+			<p>
+				The RPG Text Box Generator is an HTML5 app that converts 
+				what you type into a RPG-style text box. To try it out,
+				choose a style and type in some text below!
+			</p>
+
+			<form>
+				<table>
+					<tr>
+						<td>
+							<label for="rpgStyle">Type:</label>
+						</td>
+						<td>	 
+							<select id="rpgStyle" name="rpgStyle">
+								<option value="ff6">Final Fantasy 6 Basic</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="characterName">Character Name:</label>
+						</td>
+						<td>
+							<input type="text" id="characterName" name="characterName"></input>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="dialogText">Dialog Text:</label>
+						</td>
+						<td>
+							<textarea id="dialogText" name="dialogText"></textarea><br />
+						</td>
+					</tr>
+				</table>
+				
+
+			</form>
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,27 @@
+/*!
+/* RPG Textbox Generator 0.1
+/*
+/* "THE LUNCH-WARE LICENSE" (Revision 1)
+/* Jean-Francois Arseneau <jf.arseneau@gmail.com> wrote this file. As long as you
+/* retain this notice you can do whatever you want with this stuff. This license 
+/* is a fork of Poul-Henning Kamp's beer-ware license. I don't drink,
+/* but I love all kinds of food. If we meet some day, and you think this stuff
+/* is worth it, you can buy me lunch in return.
+/*
+*/
+
+@font-face {
+    font-family: 'FinalFantasyVISNESbRegular';
+    src: url('../fonts/FF6/final_fantasy_vi_snesb-webfont.eot');
+    src: url('../fonts/FF6/final_fantasy_vi_snesb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FF6/final_fantasy_vi_snesb-webfont.woff') format('woff'),
+         url('../fonts/FF6/final_fantasy_vi_snesb-webfont.ttf') format('truetype'),
+         url('../fonts/FF6/final_fantasy_vi_snesb-webfont.svg#FinalFantasyVISNESbRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ff6-font (@font_size) {
+	font-family: FinalFantasyVISNESbRegular;
+	font-size: @font_size;
+}
